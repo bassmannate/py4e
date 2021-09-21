@@ -8,4 +8,5 @@ while True:
   except:
     print("Input must be numeric")
     exit()
-  pieces
+  pieces = pieces.append(num)
+print(pieces)
