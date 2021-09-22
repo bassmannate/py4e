@@ -11,5 +11,9 @@ while True:
     continue
   total = total + num
   count = count +1
+<<<<<<< HEAD
 print(total,count,total / count)
 
+=======
+print(total,count,total / count)
+>>>>>>> master
