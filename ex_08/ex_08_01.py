@@ -1,11 +1,15 @@
-han = open('mbox-short.txt')
+def chop(list):
+    del list[len(list) - 1]
+    del list[0]
+    return None
 
-for line in han:
-    line = line.rstrip()
-    wds = line.split()
-    if len(wds) < 1:
-        continue
-#    print('Words:',wds)
-    if wds[0] != 'From':
-        continue
-    print(wds[2])
+def middle(list):
+    list = list[1 : len(list) - 1]
+    return list
+
+letters = ["a","b","c"]
+alpha = ["a","b","c","d","e","f"]
+
+chop(letters)
+print(letters)
+print(middle(alpha))
