@@ -19,4 +19,4 @@ for line in fhand:
         total = total + float(words[1])
         count = count + 1
 average = total / count
-print("Average SPAM confidence:",average)
+print("Average SPAM confidence:", average)

@@ -1,4 +1,4 @@
-def count(w,l):
+def count(w, l):
   x = 0
   for letter in w:
     #print(letter)
@@ -6,6 +6,7 @@ def count(w,l):
         x = x + 1
   return x
 
+
 word = 'banana'
 
-print(count("banana","a"))
+print(count("banana", "a"))

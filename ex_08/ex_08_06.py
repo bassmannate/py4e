@@ -12,4 +12,4 @@ while True:
 #data.sort()
 maximum = max(data)
 minimum = min(data)
-print("Maximum:",maximum,"Minimum:",minimum)
+print("Maximum:", maximum, "Minimum:", minimum)
