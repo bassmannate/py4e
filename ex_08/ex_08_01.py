@@ -3,12 +3,14 @@ def chop(list):
     del list[0]
     return None
 
+
 def middle(list):
-    list = list[1 : len(list) - 1]
+    list = list[1: len(list) - 1]
     return list
 
-letters = ["a","b","c"]
-alpha = ["a","b","c","d","e","f"]
+
+letters = ["a", "b", "c"]
+alpha = ["a", "b", "c", "d", "e", "f"]
 
 chop(letters)
 print(letters)
