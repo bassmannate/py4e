@@ -19,7 +19,7 @@ for line in fhand:
       days[words[1]] = 1
     else:
       days[words[1]] = days[words[1]] + 1
-      
+
 largest = None
 mailcount = None
 for key in days:
