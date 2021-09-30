@@ -1,4 +1,4 @@
-fhand = open("words.txt")
+fhand = open("../words.txt")
 wordcount = dict()
 for line in fhand:
   line = line.rstrip()
