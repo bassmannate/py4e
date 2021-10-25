@@ -2,8 +2,11 @@ import socket
 
 count = 0
 
+<<<<<<< HEAD
 text = ''
 
+=======
+>>>>>>> origin/master
 while True:
     address = input("Enter a valid URL: ")
     if len(address) < 1:
@@ -23,6 +26,7 @@ while True:
     data = mysock.recv(4096)
     if len(data) < 1:
         break
+<<<<<<< HEAD
     text += data.decode()
 #    datastrip = data.decode().rstrip()
     #for i in data:
@@ -41,4 +45,14 @@ for i in textsplit:
 mysock.close()
 #print(text[:3000])
 print(textsplit)
+=======
+    datastrip = data.decode().rstrip()
+    for i in datastrip:
+      count += 1
+      if count > 2998:
+        break
+    print(data.decode(), end='')
+
+mysock.close()
+>>>>>>> origin/master
 print("Characters:",count)
