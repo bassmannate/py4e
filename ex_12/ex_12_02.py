@@ -32,21 +32,21 @@ while True:
         #break
     #print(data.decode(), end='')
 
-textsplit = text.split("Content-Type:", *, "\n\r")[1]
-for i in textsplit:
+#textsplit = text.split("Content-Type:", *, "\n\r")[1]
+for i in text:
   count += 1
   if count > 2999:
     break
 
 mysock.close()
-#print(text[:3000])
-print(textsplit)
-    datastrip = data.decode().rstrip()
-    for i in datastrip:
-      count += 1
-      if count > 2998:
-        break
-    print(data.decode(), end='')
+print(text[:3000])
+#print(textsplit)
+#    datastrip = data.decode().rstrip()
+#    for i in datastrip:
+#      count += 1
+#      if count > 2998:
+#        break
+#    print(data.decode(), end='')
 
 mysock.close()
 print("Characters:",count)
