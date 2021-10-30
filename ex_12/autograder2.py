@@ -13,6 +13,8 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 count = 0
+total = 0
+
 url = input('Enter - ')
 req = Request(url, headers = {'User-Agent':'Mozilla/5.0'})
 html = urlopen(req).read()
@@ -20,8 +22,8 @@ soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve all of the p tags
 tags = soup('span')
-for tag in tags:
+for span_tag in tags:
   count += 1
-  print(tag)
+  total += int(span_tag.text)
 
-print("Count: ",count)
+print("Count: ",count, "Sum:", total)
